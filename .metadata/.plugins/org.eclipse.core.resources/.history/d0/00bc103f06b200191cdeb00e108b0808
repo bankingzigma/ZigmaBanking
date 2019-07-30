@@ -1,0 +1,14 @@
+package com.zensar.Zigma.dao;
+
+import java.util.List;
+
+import com.zensar.Zigma.entities.Account;
+
+public interface zigmaDAO {
+	void insert(Account account);
+	void update(Account account);
+	void delete(Account account);
+	
+	Account getByNumber(int accountNumber);
+	List <Account> getAll();
+}

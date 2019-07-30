@@ -1,0 +1,138 @@
+package com.zensar.Zigma.dao;
+
+import java.util.List;
+
+import com.zensar.Zigma.entities.Account;
+import com.zensar.Zigma.entities.Benificiary;
+import com.zensar.Zigma.entities.Branch;
+import com.zensar.Zigma.entities.Customer;
+import com.zensar.Zigma.entities.Transactions;
+
+public class zigmaDAOImpl implements zigmaDAO {
+
+	public void insert(Account account) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void update(Account account) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Account account) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Account getByAccountNumber(int accountNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Account> getAllAccounts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Customer customer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void update(Customer customer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Customer customer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Customer getByCustomerId(int customerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Customer> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Transactions transaction) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void update(Transactions transaction) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Transactions transaction) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Transactions getByTransactionId(int transactionId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Transactions> getAllTransactions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void update(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Benificiary getByBenificiaryId(int benificiaryId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Benificiary> getAllBenificiaries() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Branch branch) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void update(Branch branch) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Branch branch) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Branch getByIFSC(int ifsc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Branch> getAllBranches() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

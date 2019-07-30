@@ -1,0 +1,180 @@
+package com.zensar.Zigma.dao;
+
+import java.util.List;
+
+import javax.persistence.Query;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.zensar.Zigma.entities.Account;
+import com.zensar.Zigma.entities.Benificiary;
+import com.zensar.Zigma.entities.Branch;
+import com.zensar.Zigma.entities.Customer;
+import com.zensar.Zigma.entities.Transactions;
+
+public class zigmaDAOImpl implements zigmaDAO {
+private Session session;
+	
+	public zigmaDAOImpl(){
+	Configuration cfg= new Configuration().configure();
+	SessionFactory factory=cfg.buildSessionFactory();
+	session=factory.openSession();
+	System.out.println("DB Connection established");
+	}
+	public void insert(Account account) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(account);
+		tx.commit();
+		System.out.println("Account inserted");
+		
+	}
+
+	public void update(Account account) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(account);
+		tx.commit();
+		System.out.println("Account updated");
+	}
+
+	public void delete(Account account) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Account getByAccountNumber(int accountNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Account> getAllAccounts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Customer customer) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(customer);
+		tx.commit();
+		System.out.println("Customer inserted");
+	}
+
+	public void update(Customer customer) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(customer);
+		tx.commit();
+		System.out.println("Customer updated");
+	}
+
+	public void delete(Customer customer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Customer getByCustomerId(int customerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Customer> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Transactions transactions) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(transactions);
+		tx.commit();
+		System.out.println("Transaction inserted");
+	}
+
+	public void update(Transactions transactions) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(transactions);
+		tx.commit();
+		System.out.println("Transaction updated");
+	}
+
+	public void delete(Transactions transactions) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Transactions getByTransactionId(int transactionId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Transactions> getAllTransactions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(benificiary);
+		tx.commit();
+		System.out.println("Benificiary inserted");
+	}
+
+	public void update(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(benificiary);
+		tx.commit();
+		System.out.println("Benificiary updated");
+	}
+
+	public void delete(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Benificiary getByBenificiaryId(int benificiaryId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Benificiary> getAllBenificiaries() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void insert(Branch branch) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(branch);
+		tx.commit();
+		System.out.println("Branch inserted");
+	}
+
+	public void update(Branch branch) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Branch branch) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Branch getByIFSC(int ifsc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Branch> getAllBranches() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

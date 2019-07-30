@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.Account"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.Customer"/>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.Transaction"/>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.Benificiary"/>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.Branch"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="org.hibernate.Session"/>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.AdminLogin"/>
+<fullyQualifiedTypeName name="com.zensar.Zigma.entities.CustomerLogin"/>
+</qualifiedTypeNameHistroy>

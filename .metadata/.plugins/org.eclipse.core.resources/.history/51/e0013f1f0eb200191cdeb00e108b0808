@@ -1,0 +1,257 @@
+package com.zensar.Zigma.dao;
+
+import java.util.List;
+
+import javax.persistence.Query;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.zensar.Zigma.entities.Account;
+import com.zensar.Zigma.entities.AdminLogin;
+import com.zensar.Zigma.entities.Benificiary;
+import com.zensar.Zigma.entities.Branch;
+import com.zensar.Zigma.entities.Customer;
+import com.zensar.Zigma.entities.CustomerLogin;
+import com.zensar.Zigma.entities.Transactions;
+
+public class zigmaDAOImpl implements zigmaDAO {
+private Session session;
+	
+	public zigmaDAOImpl(){
+	Configuration cfg= new Configuration().configure();
+	SessionFactory factory=cfg.buildSessionFactory();
+	session=factory.openSession();
+	System.out.println("DB Connection established");
+	}
+	public void insert(Account account) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(account);
+		tx.commit();
+		System.out.println("Account inserted");
+		
+	}
+
+	public void update(Account account) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(account);
+		tx.commit();
+		System.out.println("Account updated");
+	}
+
+	public void delete(Account account) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.delete(account);
+		tx.commit();
+		System.out.println("Account deleted");
+	}
+
+	public Account getByAccountNumber(int accountNumber) {
+		// TODO Auto-generated method stub
+		return session.get(Account.class, accountNumber);
+	}
+
+	public List<Account> getAllAccounts() {
+		// TODO Auto-generated method stub
+		Query query=session.createQuery("from Account");//Hibernate Query Language
+		return query.getResultList();
+	}
+
+	public void insert(Customer customer) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(customer);
+		tx.commit();
+		System.out.println("Customer inserted");
+	}
+
+	public void update(Customer customer) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(customer);
+		tx.commit();
+		System.out.println("Customer updated");
+	}
+
+	public void delete(Customer customer) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.delete(customer);
+		tx.commit();
+		System.out.println("Customer deleted");
+	}
+
+	public Customer getByCustomerId(int customerId) {
+		// TODO Auto-generated method stub
+		return session.get(Customer.class, customerId);
+	}
+
+	public List<Customer> getAll() {
+		// TODO Auto-generated method stub
+		Query query=session.createQuery("from Customer");//Hibernate Query Language
+		return query.getResultList();
+	}
+
+	public void insert(Transactions transactions) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(transactions);
+		tx.commit();
+		System.out.println("Transaction inserted");
+	}
+
+	public void update(Transactions transactions) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(transactions);
+		tx.commit();
+		System.out.println("Transaction updated");
+	}
+
+	public void delete(Transactions transactions) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.delete(transactions);
+		tx.commit();
+		System.out.println("Transaction deleted");
+	}
+
+	public Transactions getByTransactionId(int transactionId) {
+		// TODO Auto-generated method stub
+		return session.get(Transactions.class, transactionId);
+	}
+
+	public List<Transactions> getAllTransactions() {
+		// TODO Auto-generated method stub
+		Query query=session.createQuery("from Transactions");//Hibernate Query Language
+		return query.getResultList();
+	}
+
+	public void insert(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(benificiary);
+		tx.commit();
+		System.out.println("Benificiary inserted");
+	}
+
+	public void update(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(benificiary);
+		tx.commit();
+		System.out.println("Benificiary updated");
+	}
+
+	public void delete(Benificiary benificiary) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.delete(benificiary);
+		tx.commit();
+		System.out.println("Benificiary deleted");
+	}
+
+	public Benificiary getByBenificiaryId(int benificiaryId) {
+		// TODO Auto-generated method stub
+		return session.get(Benificiary.class, benificiaryId);
+	}
+
+	public List<Benificiary> getAllBenificiaries() {
+		// TODO Auto-generated method stub
+		Query query=session.createQuery("from Benificiary");//Hibernate Query Language
+		return query.getResultList();
+	}
+
+	public void insert(Branch branch) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(branch);
+		tx.commit();
+		System.out.println("Branch inserted");
+	}
+
+	public void update(Branch branch) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(branch);
+		tx.commit();
+		System.out.println("Branch updated");
+	}
+
+	public void delete(Branch branch) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.delete(branch);
+		tx.commit();
+		System.out.println("Branch deleted");
+	}
+
+	public Branch getByIFSC(int ifsc) {
+		// TODO Auto-generated method stub
+		return session.get(Branch.class, ifsc);
+	}
+
+	public List<Branch> getAllBranches() {
+		// TODO Auto-generated method stub
+		Query query=session.createQuery("from Branch");//Hibernate Query Language
+		return query.getResultList();
+	}
+	public void insert(AdminLogin adminlogin) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(adminlogin);
+		tx.commit();
+		System.out.println("AdminLogin inserted");
+	}
+	public void update(AdminLogin adminlogin) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(adminlogin);
+		tx.commit();
+		System.out.println("AdminLogin details updated");
+	}
+	public void delete(AdminLogin adminlogin) {
+		// TODO Auto-generated method stub
+		
+	}
+	public AdminLogin getByAdminId(int adminId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<AdminLogin> getAllAdmins() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void insert(CustomerLogin customerlogin) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.save(customerlogin);
+		tx.commit();
+		System.out.println("CustomerLogin details inserted");
+	}
+	public void update(CustomerLogin customerlogin) {
+		// TODO Auto-generated method stub
+		Transaction tx=session.beginTransaction();
+		session.update(customerlogin);
+		tx.commit();
+		System.out.println("CustomerLogin details updated");
+	}
+	public void delete(CustomerLogin customerlogin) {
+		// TODO Auto-generated method stub
+		
+	}
+	public CustomerLogin getByCRN(int crn) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<CustomerLogin> getAllCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

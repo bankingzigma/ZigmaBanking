@@ -1,0 +1,47 @@
+package com.zensar.Zigma.dao;
+
+import java.util.List;
+
+import com.zensar.Zigma.entities.Account;
+import com.zensar.Zigma.entities.Benificiary;
+import com.zensar.Zigma.entities.Branch;
+import com.zensar.Zigma.entities.Customer;
+import com.zensar.Zigma.entities.Transaction;
+
+public interface zigmaDAO {
+	
+	//actions for Account
+	void insert(Account account);
+	void update(Account account);
+	void delete(Account account);
+	Account getByAccountNumber(int accountNumber);
+	List <Account> getAllAccounts();
+	
+	//actions for Customer
+	void insert(Customer customer);
+	void update(Customer customer);
+	void delete(Customer customer);
+	Customer getByCustomerId(int customerId);
+	List <Customer> getAll();
+	
+	//actions for Transaction
+	void insert(Transaction transaction);
+	void update(Transaction transaction);
+	void delete(Transaction transaction);
+	Transaction getByTransactionId(int transactionId);
+	List <Transaction> getAllTransactions();
+	
+	//actions for Benificiary
+	void insert(Benificiary benificiary);
+	void update(Benificiary benificiary);
+	void delete(Benificiary benificiary);
+	Benificiary getByBenificiaryId(int benificiaryId);
+	List <Benificiary> getAllBenificiaries();
+	
+	//actions for Branch
+	void insert(Branch branch);
+	void update(Branch branch);
+	void delete(Branch branch);
+	Branch getByIFSC(int ifsc);
+	List <Branch> getAllBranches();
+}
