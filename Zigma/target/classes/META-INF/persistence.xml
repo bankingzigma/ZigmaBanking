@@ -7,8 +7,8 @@
     <persistence-unit name="Zigma" transaction-type="RESOURCE_LOCAL">
     
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.zensar.Zigma.Customer</class>
-        <class>com.zensar.Zigma.Branch</class>
+        <class>com.zensar.Zigma.entities.Customer</class>
+        <class>com.zensar.Zigma.entities.Branch</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/banking_system" />
