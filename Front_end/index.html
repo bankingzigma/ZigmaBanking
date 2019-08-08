@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
+    <!--<script src="scripts/login.js"></script>-->
 	</head>
 <body class="index">
 <!--==============================header=================================-->
@@ -17,10 +18,55 @@
 					<nav>
 						<ul class="sf-menu">
 							<li class="current"><a href="index.html">Home</a></li>
-							<li><a href="index-1.html">Personal</a></li>
-							<li><a href="index-2.html">Corporate</a></li>
+							<li><div class="dropdown">
+                                <a href ="#"class="dropbtn">Personal</a>
+                                    <div class="dropdown-content">
+                                    <ul>
+                                    <li><a href ="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container1">
+      <label for="uname"><b>Customer Relationship Number</b></label>
+      <input type="text" placeholder="Enter Customer Relationship Number" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required id="pass"><br>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div></li>
+                                    <li><a href="#">xyz</a></li>
+                                    <li><a href="#">abc</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
+							<li><div class="dropdown">
+                                <a href ="#"class="dropbtn">Admin</a>
+                                    <div class="dropdown-content">
+                                    <ul class = "drop">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">xyz</a></li>
+                                    <li><a href="#">abc</a></li>
+                                    </ul>
+                                    </div>
+                                </div></li>
 							<li><a href="index-3.html">Offers</a></li>
-							<li><a href="index-4.html">Login</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -38,9 +84,6 @@
 				<div class="grid_12">
 					<header>
 						<h2><span>SlideShow</span></h2>
-<!--					</header>-->
-					<p>Gamus at magna non nunc tristique rhoncuseri tym. Aliquam nibh ante, egestas id dictum aterert commodo re luctus libero. Praesent faucibus malesuada cibuste. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed rabitur vel lorem sit amet nulla ullamcorper fermentum. <br><br>In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<!--<a href="#" class="btn">more</a>-->
 				</div>
                 </div>
 			</div>
