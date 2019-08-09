@@ -26,32 +26,38 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="">
+  <form class="modal-content animate" action="loginpage.html">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container1">
-      <label for="uname"><b>Customer Relationship Number</b></label>
-      <input type="text" placeholder="Enter Customer Relationship Number" name="uname" required><br>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required id="pass"><br>
-        
-      <button type="submit">Login</button>
+		<table>
+			<tr>
+			<td><label for="uname"><b>Customer Relationship Number:</b></label></td>
+		  	<td><input type="text" placeholder="Enter Customer Relationship Number" name="uname" required></td><br>
+			</tr>
+			
+			<tr>
+      		<td><label for="psw"><b>Password:</b></label></td>
+      		<td><input type="password" placeholder="Enter Password" name="psw" required id="pass"><br></td>
+        	</tr>
+		</table>
+			
+      
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
 
     <div class="container1" style="background-color:#f1f1f1">
+		<button type="submit" class ="cancelbtn" id="login">Login</button>
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw"><a href="#">Forgot password?</a></span>
+	
     </div>
   </form>
 </div></li>
-                                    <li><a href="#">xyz</a></li>
-                                    <li><a href="#">abc</a></li>
+                            
                                     </ul>
                                     </div>
                                 </div>
@@ -59,14 +65,68 @@
 							<li><div class="dropdown">
                                 <a href ="#"class="dropbtn">Admin</a>
                                     <div class="dropdown-content">
-                                    <ul class = "drop">
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#">xyz</a></li>
-                                    <li><a href="#">abc</a></li>
+                                    <ul>
+                                    <li><a href ="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</a>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container1">
+		<table>
+			<tr>
+			<td><label for="uname"><b>Account Number:</b></label></td>
+		  	<td><input type="number" placeholder="Enter Account Number" name="uname" required></td><br>
+			</tr>
+			
+			<tr>
+      		<td><label for="psw"><b>Mobile Number:</b></label></td>
+      		<td><input type="number" placeholder="Enter Mobile Number" name="psw" required><br></td>
+        	</tr>
+			
+			<tr>
+      		<td><label for="psw"><b>Email ID:</b></label></td>
+      		<td><input type="email" placeholder="Enter Email ID" name="psw" required id="pass"><br></td>
+        	</tr>
+			
+			<tr>
+      		<td><label for="psw"><b>Current Password:</b></label></td>
+      		<td><input type="password" placeholder="Enter Current Password" name="psw" required id="pass"><br></td>
+        	</tr>
+			
+			<tr>
+      		<td><label for="psw"><b>New Password:</b></label></td>
+      		<td><input type="password" placeholder="Enter New Password" name="psw" required id="pass"><br></td>
+        	</tr>
+			
+			<tr>
+      		<td><label for="psw"><b>Old Password:</b></label></td>
+      		<td><input type="password" placeholder="Enter Old Password" name="psw" required id="pass"><br></td>
+        	</tr>
+		</table>
+			
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+		<button type="submit" class ="cancelbtn" id="login">Register</button>
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+	
+    </div>
+  </form>
+</div></li>
+                            
                                     </ul>
                                     </div>
-                                </div></li>
-							<li><a href="index-3.html">Offers</a></li>
+                                </div>
+                            </li>
+							<li><a href="#">Offers</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -84,11 +144,13 @@
 				<div class="grid_12">
 					<header>
 						<h2><span>SlideShow</span></h2>
+					</header>
 				</div>
+					
                 </div>
 			</div>
 		</div>
-	</div>
+	
 	<div class="full-width-container block-3 parallax-block">
 		<div class="container">
 			<div class="row">

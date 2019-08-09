@@ -90,6 +90,7 @@ h5 a:hover {
   padding: 0;
   margin: 0;
 }
+
 .sf-menu > li > a {
   color: #7d261a;
   font-size: 27px;
@@ -160,30 +161,86 @@ h5 a:hover {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-input[type=text], input[type=password] {
-    width: 50%;
+input[type=text], input[type=password], input[type=email], input[type=number] {
+    width: 150%;
     padding: 12px 20px;
     margin-top: 8px;
+	margin-left: 20px;
     margin-bottom: 8px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-#pass{
-    margin-left: 20px;
+.detail1{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+   margin-top: 70px;
+}
+td{
+    font-size: 25px;
+}
+.details{
+    padding:10px;
+    width: 100%;
+    margin:10px;
+}
+form{
+    text-align: center;
+}
+button{
+  background:#d94d3a;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+    margin-top:40px;
+    margin-right: 50px;
+    margin-left: 70px;
+}
+button:hover{
+  background:#fff;
+  color:#d94d3a;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #d94d3a;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+  	width: auto;
+  	background-color: #f44336;
+	text-align: center;
+	
 }
 
 /* Center the image and position the close button */
 
 .container1 {
-  padding: 16px;
+  padding: 10px;
 }
 
 span.psw {
@@ -314,10 +371,10 @@ h2 span:before {
   left: 0;
 }
 h3 {
-  font-size: 50px;
-  font-family: 'Marvel', sans-serif;
-  text-align: center;
-  line-height: 50px;
+    font-size: 50px;
+    font-family: 'Marvel', sans-serif;
+    text-align: center;
+    line-height: 50px;
 }
 p {
   font: 14px/24px 'Open Sans', sans-serif;

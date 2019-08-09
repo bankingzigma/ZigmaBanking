@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <!--<script src="scripts/login.js"></script>-->
+	</head>
+<body class="index">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+                    <h1><a href="index.html">Zigma Banking<br>Solutions</a></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li class="current"><a href="loginpage.html">Personal</a></li>
+							<li><div class="dropdown">
+                                <a href ="#"class="dropbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Account Summary</a>
+                                    <div class="dropdown-content">
+                                        <ul>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="loginpage.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container1">
+		<table >
+			<tr>
+			<td><label for="uname">Date:</label></td>
+		  	<td><input type="text" name="uname" readonly></td><br>
+			</tr>
+			
+			<tr>
+      		<td><label for="psw">Time:</label></td>
+      		<td><input type="password" name="psw" readonly><br></td>
+        	</tr>
+            
+            <tr>
+      		<td><label for="psw">Account number:</label></td>
+      		<td><input type="password" name="psw" readonly><br></td>
+        	</tr>
+            
+            <tr>
+      		<td><label for="psw">Branch Name:</label></td>
+      		<td><input type="password" name="psw" readonly><br></td>
+        	</tr>
+            
+            <tr>
+      		<td><label for="psw">Current Balance:</label></td>
+      		<td><input type="password" name="psw" readonly><br></td>
+        	</tr>
+		</table>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div></li>
+                            
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
+							<li><div class="dropdown">
+                                <a href ="#"class="dropbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Add Beneficiary</a>
+                                    <div class="dropdown-content">
+                                    <ul>
+                                    <li>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container1">
+		<table>
+			<tr>
+			<td><label for="uname">Nickname:</label></td>
+		  	<td><input type="text" placeholder="Enter Nickname" name="uname"></td><br>
+			</tr>
+			
+			<tr>
+      		<td><label for="psw">Account Number:</label></td>
+      		<td><input type="number" placeholder="Enter Account Number" name="psw" required><br></td>
+        	</tr>
+			
+			<tr>
+      		<td><label for="psw">IFSC Code:</label></td>
+      		<td><input type="email" placeholder="Enter IFSC Code" name="psw" required ><br></td>
+        	</tr>
+			
+			<tr>
+      		<td><label for="psw">Branch Name:</label></td>
+      		<td><input type="password" placeholder="Enter Branch Name" name="psw" ><br></td>
+        	</tr>
+		</table>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Add Beneficiary</button>
+	
+    </div>
+  </form>
+</div></li>
+                            
+                                    </ul>
+                                    </div>
+                                </div>
+							</li>
+									<li><div class="dropdown">
+                                <a href ="updateprofile.html"class="dropbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Update Profile</a>
+                                    <div class="dropdown-content">
+                                    </div>
+                                </div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<table class="detail1">
+    <tr>
+        <td>Account Number</td>
+        <td><input class="details" name="acno" readonly></td>
+    </tr>
+    
+    <tr>
+        <td>Current Balance</td>
+        <td><input class="details" name="bal" readonly></td>
+    </tr>
+    <tr>
+        <td>Branch</td>
+        <td><input class="details" name="acno" readonly></td>
+    </tr>
+</table>
+</body>
+</html>
